@@ -3,6 +3,24 @@ plugins {
   id 'org.jetbrains.kotlin.android'
 }
 
+ext {
+  PUBLISH_GROUP_ID = 'io.github.mkhytarmkhoian'
+  PUBLISH_VERSION = '1.0.0'
+  PUBLISH_ARTIFACT_ID = 'jumper'
+  PUBLISH_DESCRIPTION = 'API for Migration'
+  PUBLISH_URL = 'https://github.com/MkhytarMkhoian/Jumper'
+  PUBLISH_LICENSE_NAME = 'Apache License'
+  PUBLISH_LICENSE_URL = 'https://github.com/MkhytarMkhoian/Jumper/blob/main/LICENSE'
+  PUBLISH_DEVELOPER_ID = 'mkhytarmkhoian'
+  PUBLISH_DEVELOPER_NAME = 'Mkhytar Mkhoian'
+  PUBLISH_DEVELOPER_EMAIL = 'mkhytar.mkhoian@gmail.com'
+  PUBLISH_SCM_CONNECTION = 'scm:git:github.com/MkhytarMkhoian/Jumper.git'
+  PUBLISH_SCM_DEVELOPER_CONNECTION = 'scm:git:ssh://github.com/MkhytarMkhoian/Jumper.git'
+  PUBLISH_SCM_URL = 'https://github.com/MkhytarMkhoian/Jumper/tree/main'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
+
 android {
   namespace 'io.github.mkhytarmkhoian.jumper'
   compileSdk 33
