@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-  namespace 'com.mkhytarmkhoian.jumper'
+  namespace 'io.github.mkhytarmkhoian.jumper'
   compileSdk 33
 
   defaultConfig {
-    applicationId "com.mkhytarmkhoian.jumper"
+    applicationId "io.github.mkhytarmkhoian.jumper"
     minSdk 23
     targetSdk 33
     versionCode 1
