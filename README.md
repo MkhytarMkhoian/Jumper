@@ -30,7 +30,7 @@ class FCMMigrationStep : MigrationStep {
 }
 ```
 
-Migration - represent migration component that contain different MigrationStep
+`Migration` - represent migration component that contain different `MigrationStep`
 
 ```kotlin
 class MigrationV1(
@@ -47,7 +47,7 @@ class MigrationV1(
 }
 ```
 
-MigrationFactory - it's a factory that you need to implement to provide Migration for each version of you app
+`MigrationFactory` - it's a factory that you need to implement to provide `Migration` for each version of you app
 
 ```kotlin
 class MigrationFactoryImpl(
@@ -65,7 +65,7 @@ class MigrationFactoryImpl(
 }
 ```
 
-MigrationStorage is responsible for saving the current version of the app and the version to upgrade
+`MigrationStorage` is responsible for saving the current version of the app and the version to upgrade
 
 ```kotlin
 class MigrationStorageImpl(
@@ -91,7 +91,7 @@ class MigrationStorageImpl(
 }
 ```
 
-MigrationRunner - runner that manages running migration
+`MigrationRunner` - runner that manages running migration
 
 ```kotlin
 suspend fun onCreate() {
