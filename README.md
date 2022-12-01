@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-implementation 'io.github.mkhytarmkhoian:jumper:1.0.0'
+  implementation 'io.github.mkhytarmkhoian:jumper:1.0.0'
 }
 ```
 
