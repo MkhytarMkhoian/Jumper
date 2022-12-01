@@ -4,8 +4,27 @@ Library that provides API for migration in Android project
 It will help you to migrate from v1 logic to v2 in a simple way with support versions
 
 ## Installation
-```
+
+Gradle:
+```gradle
+repositories {
+  mavenCentral()
+  jcenter()
+}
+
+dependencies {
 implementation 'io.github.mkhytarmkhoian:jumper:1.0.0'
+}
+```
+
+Or Maven:
+```xml
+<dependency>
+  <groupId>io.github.mkhytarmkhoian</groupId>
+  <artifactId>jumper</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
 ```
 
 ## Components
